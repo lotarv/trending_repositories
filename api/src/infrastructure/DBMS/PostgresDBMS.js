@@ -22,7 +22,10 @@ class PostgresDMBS {
     }
 
     async save(repo) {
-        await pool.query("INSERT INTO repositories (name,stars,url) VALUES ($1,$2,$3)",
+        await pool.query(`INSERT INTO repositories (name,stars,url)
+        VALUES ($1,$2,$3)
+        ON CONFLICT (name)
+        DO NOTHING`,
         [repo.name, repo.stars, repo.url]);
     }
 
