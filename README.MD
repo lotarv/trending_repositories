@@ -1,7 +1,7 @@
 # Trending Repos (Test task for JetRuby)
 
 ## Description
-The project contains API (Node.js), CLI and SPA (React + Vite) to work with API
+The project contains API (Node.js), that allows you to find out information about the most starred github repositories, CLI and SPA (React + Vite) to work with API
 
 ## Structure
 - `api/` - back-end (Node.js).
@@ -31,6 +31,24 @@ To stop the application:
 ```bash
     docker-compose down
 ``` 
+
+## API Endpoints
+The API provides the following endpoints, accessible at http://localhost:3000 when running:
+
+- GET /repositories
+    - **Description**: Retrieves a list of all trending repositories stored in the database.
+    - **Response**: JSON array of repository objects (e.g., [{ "id": 1, "name": "repo/name", "stars": 1000, "url": "https://github.com/repo/name" }, ...]).
+
+ - GET /repositories/:idOrName
+    - **Description**: Retrieves a single repository by its ID (numeric) or name (string).
+    - **Parameters**:
+        - idOrName - Either the numeric ID or the full repository name (e.g., "nodejs/node").
+    - **Response**: JSON object with repository details (e.g., { "id": 1, "name": "nodejs/node", "stars": 1000, "url": "https://github.com/nodejs/node" }), or an empty object if not found.
+
+- POST /sync
+    - **Description**: Triggers a forced sync with the GitHub API to fetch trending repositories and resets the internal sync timer.
+    - **Body**: None (currently accepts an empty body).
+    - **Response**: Text message "Sync successfull" on success.
 
 ## CLI Usage
 
