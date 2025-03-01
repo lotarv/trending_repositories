@@ -14,7 +14,7 @@ const githubGateway = new GithubGateway();
 const getAllRepos = new GetAllRepositories(repositoryDBMS);
 const getRepo = new GetRepoByNameOrId(repositoryDBMS);
 const fetchTrending = new FetchTrendingRepos(githubGateway, repositoryDBMS);
-const syncTimer = new SyncTimer(60 * 60 * 1000, () => fetchTrending.execute());
+const syncTimer = new SyncTimer(5 * 60 * 1000, () => fetchTrending.execute());
 const forceSync = new ForceSync(fetchTrending, syncTimer);
 
 
