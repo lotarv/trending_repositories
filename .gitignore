@@ -1,0 +1,47 @@
+# Логи (перенос из spa/.gitignore)
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Зависимости Node.js для всех частей
+api/node_modules/
+cli/node_modules/
+spa/node_modules/
+
+# Скомпилированные файлы SPA (перенос из spa/.gitignore)
+spa/dist/
+spa/dist-ssr/
+
+# Локальные файлы (перенос из spa/.gitignore)
+spa/*.local
+
+# Кэш Vite (дополнительно для SPA)
+spa/.cache/
+
+# Переменные окружения (общие для всех частей)
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Редакторы и IDE (перенос из spa/.gitignore)
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Docker данные
+pgdata/
+
+# Покрытие тестами (если используешь)
+coverage/

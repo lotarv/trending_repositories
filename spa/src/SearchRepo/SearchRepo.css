@@ -1,0 +1,70 @@
+.searchRepo {
+    width: 100%;
+    max-width: 500px; /* Ограничим ширину для читаемости */
+    margin: 20px auto; /* Центрируем блок */
+    padding: 20px;
+    background-color: #f9f9f9; /* Светлый фон */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .searchRepo h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+
+  .searchRepo input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none; 
+    transition: border-color 0.3s ease;
+  }
+  
+  .searchRepo input:focus {
+    border-color: #007bff; 
+  }
+  
+  /* Стили для кнопки */
+  .searchRepo button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: hsl(0, 4%, 23%); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .searchRepo button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    word-wrap: break-word;
+    display: none;
+  }
+  

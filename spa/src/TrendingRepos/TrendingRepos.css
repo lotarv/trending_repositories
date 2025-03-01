@@ -1,0 +1,65 @@
+.trending {
+    width: 100%;
+    max-width: 500px; /* Такая же ширина, как у SearchRepo */
+    margin: 20px auto; /* Центрируем блок */
+    padding: 20px;
+    background-color: #f9f9f9; /* Светлый фон */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .trending h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif; /* Единый шрифт */
+  }
+  
+  /* Стили для списка */
+  .topList {
+    width: 100%;
+    max-width: 400px; /* Чуть уже, чем контейнер */
+    padding: 0;
+    margin: 0 0 20px 0; /* Отступ снизу перед кнопкой */
+    list-style-position: inside;
+    text-align: left; /* Выравнивание текста слева для списка */
+  }
+  
+  .topList li {
+    font-size: 16px;
+    color: #333;
+    padding: 8px 10px;
+    background-color: #ffffff; /* Белый фон для каждого элемента */
+    border: 1px solid #ddd; /* Тонкая рамка */
+    border-radius: 5px;
+    margin: 5px 0; /* Отступы между элементами */
+    transition: background-color 0.3s ease;
+  }
+  
+  .star-icon{
+    color:gold;
+  }
+  
+  .topList li:hover {
+    background-color: #f0f0f0; /* Лёгкое затемнение при наведении */
+  }
+  
+  /* Стили для кнопки */
+  .showMoreButn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: hsl(0, 4%, 23%); /* Такой же синий, как в SearchRepo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .showMoreButn:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+  }

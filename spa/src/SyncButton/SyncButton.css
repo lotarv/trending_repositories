@@ -1,0 +1,11 @@
+.syncButton{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: hsl(0, 4%, 23%); /* Такой же синий, как в SearchRepo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: monospace;
+}

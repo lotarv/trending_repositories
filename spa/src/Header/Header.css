@@ -1,0 +1,10 @@
+.header {
+    width: 100%;              
+    background-color: hsl(0, 0%, 95%); 
+    padding: 10px;            
+    box-sizing: border-box; 
+    color: hsl(0, 0%, 20%); 
+    text-align: left; 
+    display: flex;
+    justify-content: space-around;
+  }
